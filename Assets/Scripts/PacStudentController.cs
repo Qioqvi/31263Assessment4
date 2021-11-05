@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PacStudentController : MonoBehaviour
 {
-    private Vector3 nextPosition = new Vector3(-10, 5, 0);
+    private Vector3 nextPosition = new Vector3(-1, 1, 0);
     private Vector3 initialPosition;
     private float testDuration = 1f;
     private float time;
@@ -20,5 +20,6 @@ public class PacStudentController : MonoBehaviour
         time += Time.deltaTime;
         float percentageComplete = time / testDuration;
         transform.position = Vector3.Lerp(initialPosition, nextPosition, percentageComplete);
+
     }
 }
